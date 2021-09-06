@@ -3,7 +3,9 @@ Date:
 
 Description:
 	This program implements a version of Dijkstra's Algorithm to
-	solve a predefined maze with the shortest possible 
+	solve a predefined maze with the shortest possible path. The
+	maze data is found in binary-maze.txt, with binary values
+	determining the walls and corridors of the maze.
 
 Program files:
 	- main.cpp
