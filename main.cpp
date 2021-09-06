@@ -1,5 +1,12 @@
 #include "maze.h"
 
+/*
+Function: main.cpp
+Author: Stef Timmermans
+Description:
+	
+
+*/
 int main()
 {
 	fstream fs;
