@@ -46,8 +46,22 @@ void print_maze(maze m)
 }
 
 
-int check_neighbors(maze m, int row, int col)
+void check_neighbors(maze m, int row, int col, int r_target, int c_target)
 {
+	if (m.data[row][col] == 0)
+	{
+		m.unvisited_nodes[row][col] = 1;
+	}
+
+	if (m.unvisited_nodes[row][col] == 1)
+		return;
+
+	if ((row == r_target) && (col = c_target))
+	{
+		cout << "Target point reached at [" << row << "][" << col << "].\n";
+		m.end_reached = 1;
+	}
+
 	// Check above
 	if (row > 0)
 	{
@@ -72,5 +86,5 @@ int check_neighbors(maze m, int row, int col)
 		// TODO
 	}
 
-	return 0;
+	return;
 }

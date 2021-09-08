@@ -3,12 +3,12 @@
 /*
 Program: maze-solver
 Author: Stef Timmermans
-Last Updated: 7 September 2021
+Last Updated: 8 September 2021
 Description:
-	Implementation of a simplified Dijkstra's Algorithm for a predetermined
-	binary maze. In binary-maze.txt, the data from which the square maze is
-	created, 0s represent walls and 1s represent corridors. The starting
-	position ([y][x]) in the maze is [1][0] and the target position is
+	Implementation of a path algorithm for a binary maze. In binary-maze.txt, 
+	the data from which the square maze is created, 0s represent walls and 1s
+	represent corridors. The starting position ([y][x]) in the maze is [1][0]
+	and the target position is
 	[19][20].
 */
 
@@ -59,7 +59,7 @@ int main()
 		3.
 	*/
 
-	int success = check_neighbors(m, row, col);
+	check_neighbors(m, row, col, 19, 20);
 
 	return 0;
 }
